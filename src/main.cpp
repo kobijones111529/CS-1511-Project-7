@@ -3,17 +3,19 @@
 
 #include "Bag.hpp"
 
+using namespace std;
+
 int main() {
   Bag grabBag;
-  std::string item;
+  string item;
 
   // Test add()
-  std::cout << "Enter an item ";
-  std::getline(std::cin, item);
+  cout << "Enter an item ";
+  getline(cin, item);
   while (item != "quit") {
     grabBag.add(item);
-    std::cout << "Enter an item or 'quit': ";
-    getline(std::cin, item);
+    cout << "Enter an item or 'quit': ";
+    getline(cin, item);
   }
   grabBag.display();
 }

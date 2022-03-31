@@ -2,12 +2,13 @@
 #include <vector>
 
 class Bag {
-private:
-  std::vector<std::string> m_items;
-
 public:
-  Bag();
+  Bag() = default;
+  Bag(std::vector<std::string> items);
 
   void add(std::string item);
   void display();
+
+private:
+  std::vector<std::string> m_items;
 };
