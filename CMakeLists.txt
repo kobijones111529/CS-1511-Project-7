@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(Project7)
+
+set(SOURCES
+    src/Bag.cpp
+
+    # Main
+    src/main.cpp
+)
+
+add_executable(${PROJECT_NAME} ${SOURCES})
+
+target_include_directories(${PROJECT_NAME} PRIVATE src)
