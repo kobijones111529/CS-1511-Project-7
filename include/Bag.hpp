@@ -3,10 +3,11 @@
 
 class Bag {
 private:
-    std::vector<std::string> m_items;
-public:
-    Bag();
+  std::vector<std::string> m_items;
 
-    void add(std::string item);
-    void display();
+public:
+  Bag();
+
+  void add(std::string item);
+  void display();
 };
