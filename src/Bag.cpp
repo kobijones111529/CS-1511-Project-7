@@ -1,8 +1,8 @@
 #include "Bag.hpp"
 
-Bag::Bag(std::vector<std::string> items) : m_items(std::move(items)) {}
+Bag::Bag(const std::vector<std::string> &items) : m_items(items) {}
 
-void Bag::add(std::string item) { m_items.push_back(item); }
+void Bag::add(const std::string &item) { m_items.push_back(item); }
 
 void Bag::display() {
   std::cout << "Items in bag:" << std::endl;
