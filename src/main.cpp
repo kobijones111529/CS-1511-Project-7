@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-// #define USE_STANDARD_LIBRARY
+#define USE_STANDARD_LIBRARY
 #include "Bag.hpp"
 
 using namespace std;
